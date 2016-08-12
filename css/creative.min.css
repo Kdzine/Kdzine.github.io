@@ -53,6 +53,11 @@ p {
 .text-faded {
   color: rgba(255, 255, 255, 0.75);
 }
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
 section {
   padding: 100px 0;
 }
@@ -485,21 +490,48 @@ footer {
     padding: 0 100px 20px 20px;
   }
 }
-.team-member {
+.carousel-inner {
+  background: url('../img/bg_bio.jpg') center center no-repeat;
+  display: table;
+}
+.carousel-inner .carousel-caption {
+  width: 98%;
+  height: auto;
+  padding: 0 10% 0 0;
+  color: #fff;
   text-align: center;
-  margin-bottom: 50px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  vertical-align: middle;
 }
-.team-member img {
-  margin: 0 auto;
-  border: 7px solid white;
+.carousel-inner .carousel-caption h1 {
+  font-size: 21px;
 }
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
+.carousel-inner .carousel-caption h4 {
+  font-size: 14px;
+  margin-bottom: 1em;
 }
-.team-member p {
-  margin-top: 0;
+@media (min-width: 768px) {
+  .carousel-inner .carousel-caption {
+    width: 90%;
+    padding: 0 20% 0 13%;
+    top: 25%;
+  }
+  .carousel-inner .carousel-caption h1 {
+    font-size: 36px;
+  }
+  .carousel-inner .carousel-caption h4 {
+    font-size: 18px;
+    margin-bottom: 2em;
+  }
+}
+.carousel-control {
+  z-index: 20;
 }
 aside.clients img {
   margin: 1em auto;
