@@ -14,6 +14,9 @@ a, a:visited {
 	.transition-all; color: #000;
 	&:hover, &:focus { color: darken(@theme-2, 15%); }
 }
+section { padding: 100px 0; }
+
+aside { padding: 50px 0; }
 
 .bg-primary { background-color: @theme-0; }
 .bg-dark { background-color: @theme-5; color: white; }
@@ -22,9 +25,6 @@ a, a:visited {
 .text-faded { color: fade(white, 75%); }
 .text-vertical-center {display: table-cell; text-align: center; vertical-align: middle;}
 
-section { padding: 100px 0; }
-
-aside { padding: 50px 0; }
 
 .no-padding { padding: 0; }
 
@@ -187,37 +187,58 @@ header:before {
 // Sections
 .section-heading { margin-top: 0; }
 
+
 // Brands Section
 #brands {
-    a, a:visited {
-        width: 100%; display: block; overflow: hidden;
-        &:hover { text-decoration: none; cursor: pointer; }
-        &:hover button { color: #fff; background: @theme-2; }
-    }
     h3 { margin-bottom: 2em; }
-    p { margin-bottom: 2em; .sans-serif-font; font-size: 13px; color: #555; }
-    object {width: 95%; height: 80px; margin-bottom: 2em; display: block;}
-    button { color: #eee; background-color: #222; }
+    a, a:visited {
+        width: 98%; margin: 0 auto 2em; padding: 1em; display: block;
+        overflow: hidden; cursor: pointer; border: 2px solid #ddd;
+        .service {
+            background-color: #eee; -webkit-box-shadow: rgba(0,0,0,0.3) 0px 0px 3px 2px inset;
+            -moz-box-shadow: rgba(0,0,0,0.3) 0px 0px 3px 2px inset;
+            box-shadowr: rgba(0,0,0,0.3) 0px 0px 3px 2px inset;
+            p { width: 90%; margin: 2em auto; .sans-serif-font; font-size: 13px; color: #6c6c6c; }
+            object { width: 100%; height: 80px; padding: 0 2.5%; margin: 0 auto 2em; display: block; }
+            button { margin-left: 5%; margin-bottom: 2em; color: #222; background-color: #ccc; }
+        }
+        &:hover {
+            text-decoration: none; border-color: @theme-2;
+            .service {
+                .transition-all; background-color: #ead49e;
+                p {  color: #222; }
+                button { color: #fff; background: @theme-2; }
+            }
+        }
+    }
+}
+@media (min-width: 62em){
+    #brands {
+        a, a:visited { width: 100%; margin: 0 auto; }
+    }
 }
 
 // Careers Section
 #careers {
     display: block; overflow: hidden;
     .feature {
-        width: 100%; height: 120px; margin-bottom: 4px; border: 1px solid #444; cursor: pointer;
-        display: block; position: relative; overflow: hidden;
-        &:hover button { color: #fff; background-color: @theme-2; }
+        width: 100%; height: 120px; margin-bottom: 4px; border: 1px solid #444;
+        display: block; position: relative; overflow: hidden; cursor: pointer;
+        button {
+            width: 100%; margin: 2em auto 0; padding: 8px 15px; font-weight: 600; color: #fff; display: block;
+        	background-color: #444; position: absolute; bottom: 0; left: 0; border-radius: 0;
+        }
+        &:hover button { color: #222; background-color: #fff; }
         &:hover:before {
-            width: 100%; height: 120px; background: rgba(0,0,0,0.5); content: ' ';
+            width: 100%; height: 100%; background: rgba(231,182,59,0.4); content: ' ';
             position: absolute; top: 0; left: 0; display: block;
         }
-        object { margin: 0 10%; display: block; cursor: pointer; }
-        object.b1 { width: 65%; margin: 0.4em auto 0; }
-        object.b2 { width: 80%; margin: 1.8em auto 0; }
-        object.b3 { width: 75%; margin: 0.8em auto 0; }
-        button {
-            width: 100%; margin: 2em auto 0; padding: 5px 15px; color: #fff; display: block;
-        	background-color: rgba(51,51,51,0.8); position: absolute; bottom: 0; left: 0; border-radius: 0;
+        &.b1 { background: url('../img/careers_pur.jpg') center center no-repeat; }
+        &.b2 { background: url('../img/careers_cosmedix.jpg') center center no-repeat; }
+        &.b3 { background: url('../img/careers_aloette.jpg') center center no-repeat; }
+        &.b1, &.b2, &.b3 {
+            -webkit-background-size: cover; -moz-background-size: cover;
+            -o-background-size: cover; background-size: cover;
         }
     }
 }
@@ -534,13 +555,16 @@ footer {
 }
 
 // Leaders
-#leaders {padding-bottom: 20px;}
+#leaders {margin: 0; padding: 0;}
+
+a, a:visited { .glyphicon { color: rgba(255,255,255,0.8); } }
+a:hover { .glyphicon { color: rgba(255,255,255,1); } }
 
 .carousel-inner {
     background: url('../img/bg_bio.jpg') center center no-repeat; display: table;
     .carousel-caption {
-        width: 98%; height: auto; padding: 0 10% 0 0; color: #fff; text-align: center; text-shadow: 0 1px 2px rgba(0,0,0,.6);
-        position: absolute; top: 15%; left: 0; right: 0; bottom: 0; z-index: 10; vertical-align: middle;
+        width: 98%; height: auto; padding: 0 10% 0 0; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.6);
+        position: absolute; top: 15%; left: 0; bottom: 0; z-index: 10; vertical-align: middle; text-align: center;
         
         h1 {font-size: 21px;}
         h4 {font-size: 14px; margin-bottom: 1em;}
