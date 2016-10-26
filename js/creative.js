@@ -61,4 +61,50 @@
         }
     });
 
+    // Astral Talent
+    
+    $('#myModal').on('hidden.bs.modal', function () {
+        $(this).removeData('bs.modal');
+        $(this).find('.modal-body').html('');
+    });
+
+    // Flexslider Plugin
+     
+    // store the slider in a local variable
+    var $window = $(window),
+      flexslider;
+
+    // tiny helper function to add breakpoints
+    function getGridSize() {
+    return (window.innerWidth < 600) ? 1 :
+           (window.innerWidth < 900) ? 2 : 3;
+    }
+
+    $(function() {
+        SyntaxHighlighter.all();
+    });
+
+    $window.load(function() {
+        $('.talent').flexslider({
+            animation: "slide",
+            animationLoop: true,
+            slideshowSpeed: 10000,
+            animationSpeed: 800,
+            directionNav: true,
+            controlNav: true,
+            useCSS: false,
+            itemWidth: 250,
+            minItems: getGridSize(), // use function to pull in initial value
+            maxItems: getGridSize() // use function to pull in initial value
+        });
+    });
+
+    // check grid size on resize event
+    $window.resize(function() {
+        var gridSize = getGridSize();
+
+        flexslider.vars.minItems = gridSize;
+        flexslider.vars.maxItems = gridSize;
+    });
+
 })(jQuery); // End of use strict
