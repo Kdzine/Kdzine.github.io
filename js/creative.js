@@ -76,8 +76,8 @@
 
     // tiny helper function to add breakpoints
     function getGridSize() {
-    return (window.innerWidth < 600) ? 1 :
-           (window.innerWidth < 900) ? 2 : 3;
+    return (window.innerWidth < 700) ? 1 :
+           (window.innerWidth < 1000) ? 2 : 3;
     }
 
     $(function() {
@@ -93,7 +93,7 @@
             directionNav: true,
             controlNav: true,
             useCSS: false,
-            itemWidth: 250,
+            itemWidth: 350,
             minItems: getGridSize(), // use function to pull in initial value
             maxItems: getGridSize() // use function to pull in initial value
         });
