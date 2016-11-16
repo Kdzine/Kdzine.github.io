@@ -11,8 +11,7 @@
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Custom Fonts -->
 		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6665694/7229172/css/fonts.css" />
 		<!-- Plugin CSS -->
 		<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 		<!-- Theme CSS -->
@@ -42,8 +41,8 @@
 						<li><a class="page-scroll" href="#brands">Brands</a></li>
 						<li><a class="page-scroll" href="#press">Press</a></li>
 						<li><a class="page-scroll" href="#about">About</a></li>
+						<li><a class="page-scroll" href="#perks">Perks</a></li>
 						<li><a class="page-scroll" href="#careers">Careers</a></li>
-						<li><a class="page-scroll" href="#talent">Talent</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -51,14 +50,10 @@
 			<!-- /.container-fluid -->
 		</nav>
 
-		<!-- Top Banner -->
 		<header>
 			<div class="header-content">
 				<div class="header-content-inner">
-					<object type="image/svg+xml" data="img/logo_astral-brands_color.svg">
-						<img src="img/logo_astral-brands_color.png" alt="No SVG Support Logo">
-					</object>
-					<h1 id="homeHeading">We are three brands. But one family. Redefining beauty.</h1>
+					<h1 id="homeHeading">Three Brands. One Family. Redefining beauty.</h1>
 					<hr>
 					<a href="#brands" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
 				</div>
@@ -96,49 +91,37 @@
 				</div>
 				<div class="row">
 					<div class="col-md-4">
-						<a class="card" target="_blank" href="http://www.aloette.com/">
-							<figure>
-								<img src="img/our-brand_aloette.jpg" alt="Aloette" />
-								<figcaption>
-									<span>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										<br><br>
-										Visit Website
-									</span>
-								</figcaption>
+						<div class="card">
+							<figure class="member-img member-img-alt">
+								<a data-toggle="modal" href="brands/card-1.html" data-target="#myModal">
+									<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
+									<img class="img-responsive" src="img/our-brand_aloette.jpg" alt="Aloette" />
+								</a>
 							</figure>
 							<i class="icon-logo_aloette"></i>
-						</a>
+						</div>
 					</div><!-- col-md-4 -->
 					<div class="col-md-4">
-						<a class="card" target="_blank" href="http://www.cosmedix.com/">
-							<figure>
-								<img src="img/our-brand_cosmedix.jpg" alt="Aloette" />
-								<figcaption>
-									<span>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										<br><br>
-										Visit Website
-									</span>
-								</figcaption>
+						<div class="card">
+							<figure class="member-img member-img-alt">
+								<a data-toggle="modal" href="brands/card-2.html" data-target="#myModal">
+									<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
+									<img class="img-responsive" src="img/our-brand_cosmedix.jpg" alt="Aloette" />
+								</a>
 							</figure>
 							<i class="icon-logo_cosmedix"></i>
-						</a>
+						</div>
 					</div><!-- col-md-4 -->
 					<div class="col-md-4">
-						<a class="card" target="_blank" href="http://www.purcosmetics.com/">
-							<figure>
-								<img src="img/our-brand_pur.jpg" alt="Aloette" />
-								<figcaption>
-									<span>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										<br><br>
-										Visit Website
-									</span>
-								</figcaption>
+						<div class="card">
+							<figure class="member-img member-img-alt">
+								<a data-toggle="modal" href="brands/card-3.html" data-target="#myModal">
+									<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
+									<img class="img-responsive" src="img/our-brand_pur.jpg" alt="Aloette" />
+								</a>
 							</figure>
 							<i class="icon-logo_pur"></i>
-						</a>
+						</div>
 					</div><!-- col-md-4 -->
 				</div>
 			</div>
@@ -224,6 +207,7 @@
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<h2 class="section-heading">Our Story</h2>
+						<h3 class="section-subheading text-muted"> </h3>
 					</div>
 				</div>
 				<div class="row">
@@ -313,17 +297,41 @@
 			</div>
 		</section>
 
+		<!-- Perks -->
+		<section id="perks">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Astral Perks</h2>
+						<h3 class="section-subheading text-muted">Few of the wonderful perks working at Astral Health &amp; Beauty.</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="flexslider perks">
+							<ul class="slides">
+								<li>
+									<div class="team-member alignc margin-48t">
+										<figure class="member-img member-img-alt">
+											<a data-toggle="modal" href="team/member-01.html" data-target="#myModal">
+												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
+												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
+											</a>
+										</figure>
+										<h4>Robert (Bob) Cohen</h4>
+										<span class="user-name">Chief Executive Officer</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- Careers -->
 		<section id="careers" class="bg-gray">
 			<div class="container">
-				<!--
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="section-heading">Careers</h2>
-						<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-					</div>
-				</div>
-				-->
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">
 						<div class="about-inner">
@@ -333,9 +341,10 @@
 								<br /><br />
 								Astral Health &amp; Beauty is proud to be the leading provider of quality beauty brands. We pride ourselves on our entrepreneurial spirit and welcome diversity. If you are interested in joining one of the fastest growing company in the professional space, please send your resume to <a href="mailto:info@astralbrands.com">info@astralbrands.com</a>.
 							</p>
-							<a class="btn" href="mailto:info@astralbrands.com">Email Astral Careers <i class="fa fa-angle-right"></i></a>
+							<a class="btn" href="careers.html">View Astral Careers <i class="fa fa-angle-right"></i></a>
 							<br><br>
 						</div><!--inner-container-->
+						<!--
 						<div class="career-logos">
 							<h3 class="section-title">Click on the links below to see open positions:</h3>
 							<figure>
@@ -363,279 +372,8 @@
 								</a>
 							</figure>
 						<div>
+						-->
 					</div><!-- col-lg-6 -->
-				</div>
-			</div>
-		</section>
-
-		<!-- Talent -->
-		<section id="talent">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="section-heading">Astral Talent</h2>
-						<h3 class="section-subheading text-muted">Astral Health &amp; Beauty team of Executives and Management.</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="flexslider talent">
-							<ul class="slides">
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-01.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Robert (Bob) Cohen</h4>
-										<span class="user-name">Chief Executive Officer</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-02.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Stephen E. Merrick</h4>
-										<span class="user-name">Chief Financial Officer</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-03.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Kathleen (Kathy) Jones</h4>
-										<span class="user-name">PHR, SHRM-CP, Human Resources Manager</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-04.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>John LaBonty</h4>
-										<span class="user-name">International, Executive Vice President &amp; General Manager</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-05.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Mark Scerbo</h4>
-										<span class="user-name">Vice President of Operations</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-06.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Julie Campbell</h4>
-										<span class="user-name">Vice President Marketing</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-07.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Alexandra (Alex) Potter</h4>
-										<span class="user-name">VP of Purchasing &amp; Planning</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-08.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Jonathan (Eric) Smith</h4>
-										<span class="user-name">Information Technology Manager</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-09.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Rachel Sullivan</h4>
-										<span class="user-name">Director of Product Development</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-10.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Andrea Pettway</h4>
-										<span class="user-name">Director of Planning &amp; Procurement</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-11.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Lori Ann Dressel</h4>
-										<span class="user-name">Director of Social Media</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-12.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Donna Hutchinson</h4>
-										<span class="user-name">Customer Service Manager</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-13.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Emily Foster</h4>
-										<span class="user-name">E-commerce Manager</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-14.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Cathy McKenna</h4>
-										<span class="user-name">President, Aloette Cosmetics</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-15.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Kim Ruggles Pitsko</h4>
-										<span class="user-name">Brand Manager for Aloette Cosmetics</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-16.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Latisha (Tisha) Thompson</h4>
-										<span class="user-name">Vice President P&Uuml;R Cosmetics</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-17.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Carolyn Walter</h4>
-										<span class="user-name">International Sales &amp; Marketing Manager-P&Uuml;R Cosmetics</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-18.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Lynnette Cole</h4>
-										<span class="user-name">Director Education Global Retail, P&Uuml;R Cosmetics</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-19.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Heidi Davis</h4>
-										<span class="user-name">National Sales Director, P&Uuml;R Cosmetics</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-20.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Christine Hayes</h4>
-										<span class="user-name">COSMEDIX Global Brand Director</span>
-									</div>
-								</li>
-								<li>
-									<div class="team-member alignc margin-48t">
-										<figure class="member-img member-img-alt">
-											<a data-toggle="modal" href="team/member-21.html" data-target="#myModal">
-												<div class="member-overlay"><h5><i class="fa fa-eye"></i></h5></div>
-												<img class="img-responsive" src="img/leader_bob.jpg" alt="" />
-											</a>
-										</figure>
-										<h4>Ryan Christopher</h4>
-										<span class="user-name">COSMEDIX Global Education Director</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -650,8 +388,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content container"></div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-
+		</div>
 		<!-- jQuery -->
 		<script src="vendor/jquery/jquery.min.js"></script>
 		<!-- Bootstrap Core JavaScript -->
