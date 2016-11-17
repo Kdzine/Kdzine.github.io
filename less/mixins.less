@@ -1,0 +1,79 @@
+// Mixins
+
+.transition-all() { -webkit-transition: all 0.35s; -moz-transition: all 0.35s; transition: all 0.35s; }
+
+.background-cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.button-variant(@color; @background; @border) {
+	color: @color;
+	background-color: @background;
+	border-color: @border;
+	.transition-all;
+
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > .dropdown-toggle& {
+		color: #000;
+		background-color: #e1e1e1;
+	    border-color: darken(@border, 7%);
+	}
+	&:active,
+	&.active,
+	.open > .dropdown-toggle& {
+		background-image: none;
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+			background-color: @background;
+			border-color: @border;
+		}
+	}
+
+	.badge {
+		color: @background;
+		background-color: @color;
+	}
+}
+
+.sans-serif-font() { font-family: 'Gotham A', 'Gotham B', 'Helvetica Neue', Arial, Sans-Serif; }
+
+.serif-font() { font-family: 'Merriweather', 'Times New Roman', serif; }
+
+.astral-logos() { font-family: 'astralbrands_logos'; }
+
+@font-face {
+  font-family: 'astralbrands_logos';
+  src:  url('../fonts/astralbrands_logos.eot?2avhoc');
+  src:  url('../fonts/astralbrands_logos.eot?2avhoc#iefix') format('embedded-opentype'),
+    url('../fonts/astralbrands_logos.ttf?2avhoc') format('truetype'),
+    url('../fonts/astralbrands_logos.woff?2avhoc') format('woff'),
+    url('../fonts/astralbrands_logos.svg?2avhoc#astralbrands_logos') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'astralbrands_logos' !important; speak: none; font-style: normal;
+  font-weight: normal; font-variant: normal; text-transform: none; line-height: 1;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo_pur-complexion:before { content: "\e902"; }
+.icon-logo_cosmedix:before { content: "\e901"; }
+.icon-logo_aloette:before { content: "\e900"; }
+.icon-logo_pur:before { content: "\e903"; }
