@@ -8,15 +8,15 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<!-- Bootstrap Core CSS -->
-		<link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Custom Fonts -->
-		<link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 		<!-- Plugin CSS -->
-		<link href="./vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 		<!-- Theme CSS -->
-		<link href="./css/creative.min.css" rel="stylesheet">
+		<link href="css/creative.min.css" rel="stylesheet">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -38,16 +38,18 @@
 			</div>
 			<!-- /.container-fluid -->
 		</nav>
+		
+		<header class="sub">
+			<div class="header-content">
+				<div class="header-content-inner">
+          <h2 class="section-heading">Astral Careers</h2>
+				</div>
+			</div>
+		</header>
 
 		<!-- Careers -->
 		<section id="career-folio">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="section-heading">Astral Careers</h2>
-						<h3 class="section-subheading text-muted"> </h3>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-lg-12 join-us">
 					  <h4>One Growing Family. Three Life-Enriching Brands.</h4>
@@ -83,51 +85,106 @@
 					</div>
 				</div>
 			</div>
-			<div class="portfolio-holder">
-				<ul id="portfolio-filter">
-					<li><a class="current btn" href="#" id="all">All</a></li>
-					<li> ---- [ By Brand ] ---- </li>
-					<li><a class="btn" href="#" id="astral">Corporate</a></li>
-					<li><a class="btn" href="#" id="aloette">Aloette</a></li>
-					<li><a class="btn" href="#" id="cosmedix">Cosmedix</a></li>
-					<li><a class="btn" href="#" id="pur">P&Uuml;R</a></li>
-					<li> ---- [ By Category ] ---- </li>
-					<li><a class="btn" href="#" id="accounting">Accounting</a></li>
-					<li><a class="btn" href="#" id="administrative">Administrative</a></li>
-					<li><a class="btn" href="#" id="brand-management">Brand Management</a></li>
-					<li><a class="btn" href="#" id="customer-service">Customer Service</a></li>
-					<li><a class="btn" href="#" id="e-commerce">E-Commerce / Social Media</a></li>
-					<li><a class="btn" href="#" id="human-resources">Human Resources</a></li>
-					<li><a class="btn" href="#" id="information-tech">Information Technology</a></li>
-					<li><a class="btn" href="#" id="internships">Internships &amp; Summer Employment</a></li>
-					<li><a class="btn" href="#" id="warehouse">Logistics / Warehousing</a></li>
-					<li><a class="btn" href="#" id="marketing">Marketing / Sales</a></li>
-					<li><a class="btn" href="#" id="product-dev">Product Development</a></li>
-					<li><a class="btn" href="#" id="supply-demand">Supply Chain / Demand Planning</a></li>
-				</ul>
+			<div class="portfolio-holder text-center">
+			  <!-- Filter Dropdown 1 -->
+			  <label for="filter-1">Sort by Brand:</label>
+				<select id="filter-1">
+					<option> ---- Select a Brand ---- </option>
+					<option><a href="#" id="all">All</a></option>
+					<option><a href="#" id="corporate">Corporate</a></option>
+					<option><a href="#" id="aloette">Aloette</a></option>
+					<option><a href="#" id="cosmedix">Cosmedix</a></option>
+					<option><a href="#" id="pur">P&Uuml;R</a></option>
+        </select>
+			  <!-- Filter Dropdown 2 -->
+			  <label for="filter-2">Sort by Field:</label>
+        <select id="filter-2">
+					<option> ---- Select a Field ---- </option>
+					<option><a href="#" id="accounting">Accounting</a></option>
+					<option><a href="#" id="administrative">Administrative</a></option>
+					<option><a href="#" id="brand-management">Brand Management</a></option>
+					<option><a href="#" id="customer-service">Customer Service</a></option>
+					<option><a href="#" id="e-commerce">E-Commerce / Social Media</a></option>
+					<option><a href="#" id="human-resources">Human Resources</a></option>
+					<option><a href="#" id="information-tech">Information Technology</a></option>
+					<option><a href="#" id="internships">Internships &amp; Summer Employment</a></option>
+					<option><a href="#" id="warehouse">Logistics / Warehousing</a></option>
+					<option><a href="#" id="marketing">Marketing / Sales</a></option>
+					<option><a href="#" id="product-dev">Product Development</a></option>
+					<option><a href="#" id="supply-demand">Supply Chain / Demand Planning</a></option>
+				</select>
+				<!-- article blocks --> 
 				<ul id="portfolio-items" class="row">
 					<li>
-						<a target="_blank" href="/">
+						<a class="corporate accounting" 
+							 href="/">
 							<h4>Job Title</h4>
 							<h5>Job Category</h5>
+							<div class="loader"></div>
+							<div class="meta">
+								<span class="meta_date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+								<span class="meta_time"><i class="fa fa-clock-o"></i> 3 min read</span>
+							</div>
 						</a>
 					</li>
 					<li>
-						<a target="_blank" href="/">
+						<a class="pur administrative" 
+							 href="/">
 							<h4>Job Title</h4>
 							<h5>Job Category</h5>
+							<div class="loader"></div>
+							<div class="meta meta-preview"> 
+								<span class="meta_date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+								<span class="meta_time"><i class="fa fa-clock-o"></i> 3 min read</span>
+							</div>
 						</a>
 					</li>
 					<li>
-						<a target="_blank" href="/">
+						<a class="cosmedix brand-management" 
+							 href="/">
 							<h4>Job Title</h4>
 							<h5>Job Category</h5>
+							<div class="loader"></div>
+							<div class="meta meta-preview"> 
+								<span class="meta_date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+								<span class="meta_time"><i class="fa fa-clock-o"></i> 3 min read</span>
+							</div>
 						</a>
 					</li>
 					<li>
-						<a target="_blank" href="/">
+						<a class="aloette warehouse" 
+							 href="/">
 							<h4>Job Title</h4>
 							<h5>Job Category</h5>
+							<div class="loader"></div>
+							<div class="meta meta-preview"> 
+								<span class="meta_date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+								<span class="meta_time"><i class="fa fa-clock-o"></i> 3 min read</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="aloette warehouse" 
+							 href="/">
+							<h4>Job Title</h4>
+							<h5>Job Category</h5>
+							<div class="loader"></div>
+							<div class="meta meta-preview"> 
+								<span class="meta_date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+								<span class="meta_time"><i class="fa fa-clock-o"></i> 3 min read</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="aloette warehouse" 
+							 href="/">
+							<h4>Job Title</h4>
+							<h5>Job Category</h5>
+							<div class="loader"></div>
+							<div class="meta meta-preview"> 
+								<span class="meta_date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+								<span class="meta_time"><i class="fa fa-clock-o"></i> 3 min read</span>
+							</div>
 						</a>
 					</li>
 				</ul><!--end .portfolio-items-->
@@ -140,16 +197,16 @@
 		</footer>
 
 		<!-- jQuery -->
-		<script src="./vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/jquery/jquery.min.js"></script>
 		<!-- Bootstrap Core JavaScript -->
-		<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 		<!-- Plugin JavaScript -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-		<script src="./vendor/scrollreveal/scrollreveal.min.js"></script>
-		<script src="./vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script src='./js/jquery.flexslider-min.js'></script>
+		<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src='js/jquery.flexslider-min.js'></script>
 		<!-- Theme JavaScript -->
-		<script src="./js/creative.js"></script>
-		<script src="./js/agency.min.js"></script>
+		<script src="js/creative.js"></script>
+		<script src="js/agency.min.js"></script>
 	</body>
 </html>
