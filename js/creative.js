@@ -22,11 +22,7 @@
 		});
 
 		// Offset for Main Navigation
-		$('#mainNav').affix({
-				offset: {
-						top: 1
-				}
-		})
+		$('#mainNav').affix({ offset: { top: 1 } })
 
 		// Initialize and Configure Scroll Reveal Animation
 		window.sr = ScrollReveal();
@@ -45,29 +41,8 @@
 				distance: '0px'
 		}, 300);
 
-		// Astral Talent
-		
-		$('#myModal').on('hidden.bs.modal', function () {
-				$(this).removeData('bs.modal');
-				$(this).find('.modal-body').html('');
-		});
-
-		var $btns = $('.btn').click(function() {
-			if (this.id == 'all') {
-				$('#portfolio-items > li').fadeIn(450);
-			} else {
-				var $el = $('.' + this.id).fadeIn(450);
-				$('#portfolio-items > li').not($el).hide();
-			}
-			$btns.removeClass('current');
-			$(this).addClass('current');
-		});
-
-		// Flexslider Plugin
-		 
 		// store the slider in a local variable
-		var $window = $(window),
-			flexslider;
+		var $window = $(window), flexslider;
 
 		// tiny helper function to add breakpoints
 		function getGridSize() {
@@ -75,23 +50,22 @@
 							 (window.innerWidth < 1000) ? 2 : 3;
 		}
 
-		$(function() {
-				SyntaxHighlighter.all();
-		});
+		$(function(){ SyntaxHighlighter.all(); });
 
+		// Flexslider Plugin
 		$window.load(function() {
-				$('.perks').flexslider({
-						animation: "slide",
-						animationLoop: true,
-						slideshowSpeed: 10000,
-						animationSpeed: 800,
-						directionNav: true,
-						controlNav: true,
-						useCSS: false,
-						itemWidth: 350,
-						minItems: getGridSize(), // use function to pull in initial value
-						maxItems: getGridSize() // use function to pull in initial value
-				});
+			$('.perks').flexslider({
+				animation: "slide",
+				animationLoop: true,
+				slideshowSpeed: 10000,
+				animationSpeed: 800,
+				directionNav: true,
+				controlNav: true,
+				useCSS: false,
+				itemWidth: 350,
+				minItems: getGridSize(),
+				maxItems: getGridSize()
+			});
 		});
 
 		// check grid size on resize event
@@ -101,5 +75,13 @@
 				flexslider.vars.minItems = gridSize;
 				flexslider.vars.maxItems = gridSize;
 		});
+
+		// Select2 for Career Filtering
+		$("#filter-select").select2({
+			placeholder: "SELECT A FILTER",
+			allowClear: true
+		});
+
+		// Careers Filter
 
 })(jQuery); // End of use strict
