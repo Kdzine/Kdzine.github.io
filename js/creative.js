@@ -83,5 +83,14 @@
 		});
 
 		// Careers Filter
+		$('#filter-select').change(function() {
+		  var category = $(this).val();
+		  if (category === 'all') {
+		    $('#portfolio-items > li').fadeIn(450);
+		  } else {
+		    $('#portfolio-items > li').fadeIn(450);
+		    $('#portfolio-items > li').not('.' + category).hide();
+		  }
+		});
 
 })(jQuery); // End of use strict
