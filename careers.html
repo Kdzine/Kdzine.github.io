@@ -37,6 +37,13 @@
 			</div>
 			<!-- /.container-fluid -->
 		</nav>
+		
+		<!-- Careers Video -->
+		<header class="sub">
+      <video autoplay loop muted class="fillWidth fadeIn" data-wow-delay="0.5s" poster="" id="video-background" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+        <source src="https://s3.amazonaws.com/astralbrands/_videos/astral-guiding-principles_low-res.mp4" type="video/mp4">
+      </video>
+		</header>
 
 		<!-- Careers Intro -->
 		<section id="career-intro">
@@ -71,13 +78,15 @@
 							<h4>We combine scientifically advanced technology with nature-based ingredients.</h4>
 						</div>
 					</li>
-					<li><img src="img/pillars_chirality.jpg" alt="Botanicals" title="Botanicals" /></li>
-					<li>
+					<li class="visible-md visible-lg">
+						<img src="img/pillars_logo.jpg" alt="Botanicals" title="Botanicals" />
+					</li>
+					<li class="visible-md visible-lg">
 						<div class="text">
 							<h4>We are environmentally conscientious and advocate cruelty-free products.</h4>
 						</div>
 					</li>
-					<li><img src="img/pillars_exfoliation.jpg" alt="Botanicals" title="Botanicals" /></li>
+					<li><img src="img/pillars_chirality.jpg" alt="Botanicals" title="Botanicals" /></li>
 					<li>
 						<div class="text">
 							<h4>
@@ -85,8 +94,11 @@
 							</h4>
 						</div>
 					</li>
-					<li class="logo">
-						<img src="img/pillars_logo.jpg" alt="Botanicals" title="Botanicals" />
+					<li><img src="img/pillars_exfoliation.jpg" alt="Botanicals" title="Botanicals" /></li>
+					<li class="hidden-md hidden-lg">
+						<div class="text">
+							<h4>We are environmentally conscientious and advocate cruelty-free products.</h4>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -126,7 +138,7 @@
 							<option value="e-commerce">E-Commerce / Social Media</option>
 							<option value="human-resources">Human Resources</option>
 							<option value="information-tech">Information Technology</option>
-							<option value="internships">Internships &amp; Summer Employment</option>
+							<option value="internships">Internships</option>
 							<option value="warehouse">Logistics / Warehousing</option>
 							<option value="marketing">Marketing / Sales</option>
 							<option value="product-dev">Product Development</option>
@@ -136,9 +148,8 @@
 				</div>
 				<!-- article blocks --> 
 				<ul id="portfolio-items" class="row">
-					<li>
-						<a class="corporate marketing pur" 
-							 href="/">
+					<li class="corporate marketing">
+						<a href="/">
 							<h4>Senior Digital Marketing Manager</h4>
 							<h5>Marketing</h5>
 							<div class="meta">
@@ -147,9 +158,8 @@
 							</div>
 						</a>
 					</li>
-					<li>
-						<a class="pur administrative" 
-							 href="/">
+					<li class="pur administrative">
+						<a href="/">
 							<h4>Administrative Assistant</h4>
 							<h5>Administrative</h5>
 							<div class="meta meta-preview">
@@ -158,10 +168,9 @@
 							</div>
 						</a>
 					</li>
-					<li>
-						<a class="cosmedix brand-management" 
-							 href="/">
-							<h4>Cosmedix Brand Manager</h4>
+					<li class="cosmedix brand-management">
+						<a href="/">
+							<h4>Brand Manager</h4>
 							<h5>Brand Management</h5>
 							<div class="meta meta-preview">
 								<span class="meta_date"><i class="fa fa-calendar-o"></i> Sept 30</span>
@@ -169,9 +178,8 @@
 							</div>
 						</a>
 					</li>
-					<li>
-						<a class="corporate e-commerce" 
-							 href="/">
+					<li class="corporate e-commerce">
+						<a href="/">
 							<h4>Director of E-Commerce</h4>
 							<h5>E-Commerce</h5>
 							<div class="meta meta-preview">
@@ -180,10 +188,9 @@
 							</div>
 						</a>
 					</li>
-					<li>
-						<a class="aloette product-dev" 
-							 href="/">
-							<h4>Aloette Product Developer</h4>
+					<li class="aloette product-dev">
+						<a href="/">
+							<h4>Product Developer</h4>
 							<h5>Product Developer</h5>
 							<div class="meta meta-preview">
 								<span class="meta_date"><i class="fa fa-calendar-o"></i> May 05</span>
@@ -191,10 +198,9 @@
 							</div>
 						</a>
 					</li>
-					<li>
-						<a class="pur internships" 
-							 href="/">
-							<h4>P&Uuml;R Intership</h4>
+					<li class="pur internships">
+						<a href="/">
+							<h4>Graphic Design Intership</h4>
 							<h5>Interships</h5>
 							<div class="meta meta-preview">
 								<span class="meta_date"><i class="fa fa-calendar-o"></i> Feb 17</span>
@@ -221,7 +227,6 @@
 		<!-- Plugin JavaScript -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 		<script src="plug-ins/scrollreveal/scrollreveal.min.js"></script>
-		<script src="plug-ins/magnific-popup/jquery.magnific-popup.min.js"></script>
 		<script src='js/jquery.flexslider-min.js'></script>
 		<!-- Theme JavaScript -->
 		<script src="js/agency.min.js"></script>
