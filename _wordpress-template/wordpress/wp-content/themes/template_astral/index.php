@@ -25,7 +25,7 @@
 			<!-- /.container-fluid -->
 		</nav>
 
-		<header>
+		<header id="banner">
 			<div class="header-content">
 				<div class="header-content-inner">
 					<h1 id="homeHeading">Three Brands. One Family.</h1>
@@ -242,6 +242,19 @@
 							</li>
 							<li>
 								<div class="timeline-image">
+									<img class="img-circle img-responsive" src="img/astral-story_2012.jpg" alt="">
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>2012</h4>
+									</div>
+									<div class="timeline-body">
+										<p class="text-muted">Aloette launches CRM system for franchisee and beauty consultants becoming a leader in the hot category of social selling.</p>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted">
+								<div class="timeline-image">
 									<img class="img-circle img-responsive" src="img/astral-story_2015.jpg" alt="">
 								</div>
 								<div class="timeline-panel">
@@ -253,7 +266,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="timeline-inverted last">
+							<li class="last">
 								<div class="timeline-image">
 									<img class="img-circle img-responsive" src="img/astral-story_2016.jpg" alt="">
 								</div>

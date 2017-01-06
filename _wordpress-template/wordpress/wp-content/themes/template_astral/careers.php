@@ -12,6 +12,13 @@
 			</div>
 			<!-- /.container-fluid -->
 		</nav>
+		
+		<!-- Careers Video -->
+		<header class="sub">
+      <video autoplay loop muted class="fillWidth fadeIn" data-wow-delay="0.5s" poster="" id="video-background" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+        <source src="https://s3.amazonaws.com/astralbrands/_videos/astral-guiding-principles_low-res.mp4" type="video/mp4">
+      </video>
+		</header>
 
 		<!-- Careers Intro -->
 		<section id="career-intro">
