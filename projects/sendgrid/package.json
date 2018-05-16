@@ -1,6 +1,6 @@
 {
   "name": "sendgrid-scheduler",
-  "version": "0.1.1",
+  "version": "0.2.4",
   "description": "Email campaign scheduler for Send Grid",
   "main": "app.js",
   "scripts": {
@@ -9,8 +9,9 @@
   "author": "Kevin A Farrar",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.3",
     "@sendgrid/mail": "^6.2.1",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.0-beta4",
     "node-schedule": "^1.3.0"
   }
 }
