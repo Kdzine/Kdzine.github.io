@@ -4,8 +4,7 @@
   "description": "Email campaign scheduler for Send Grid",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Kevin A Farrar",
   "license": "MIT",
